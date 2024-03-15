@@ -1,0 +1,14 @@
+
+      #para {
+        line-height: 1.4;
+        text-align:justify;
+        text-indent: 50px;
+        width: 80%;
+        min-width: 414px;
+      }
+      h1::first-letter{
+        font-size: 2em;
+      }
+      p::first-line{
+        color: red;
+      }

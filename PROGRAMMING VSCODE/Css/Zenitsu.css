@@ -1,0 +1,41 @@
+.heading{
+        text-align: center;
+        background-color: rgb(221, 145, 32);
+        border-style: inset;
+        border-width: 3px;
+}
+.image{
+    width: 100%; 
+    border-style: outset; 
+    border-width: 3px
+}
+.para{
+    font-size: 2vw
+}
+.heading2{
+    font-size: 2vw; 
+    color: orange; 
+    text-align: center
+}
+.heading3{
+   color: coral; text-align: center
+}
+.para2{
+    text-align: center; 
+    color: chocolate
+}
+.container {
+    display: flex;
+}
+
+.vid1 {
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    justify-items: center;
+}
+.foot{
+    padding: 3px; text-align: center; background-color: coral
+}
+

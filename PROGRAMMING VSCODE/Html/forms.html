@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>form</title>
+  </head>
+  <body>
+    <style>
+      .header
+{
+ background-color:#808080;
+ color:white;
+ font-family:'Times New Roman';
+ padding:20px;
+ text-align:left;
+ font-size:20px;
+}
+.content
+{
+ background-color:white;
+ color:black;
+ font-family:'Times New Roman';
+ text-align:justify;
+ font-size:20px;
+ font-style:normal;
+}
+
+    </style>
+    <div class="header">
+      <h2>The World Of Fruit</h2>
+    </div>
+    <section>
+      <div class="content">
+        <h2>Fruit Survey</h2>
+        <br />
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <br />
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <p>
+          <h3>How many pieces of fruit<br>do you ear per day?</h3>
+        </p>
+        <input type="radio" id="0" name="num" value="0" />
+        <label for="0" name="number" value="0">0</label><br>
+        <input type="radio" id="1" name="num" value="1" />
+        <label for="1" name="number" value="1">1</label><br>
+        <input type="radio" id="2" name="num" value="2" />
+        <label for="2" name="number" value="2">2</label><br>
+        <input type="radio" id="3" name="num" value="3" />
+        <label for="3" name="number" value="more than 2">More than 2</label><br>
+        <br />
+        <p><h3>My Favorite Fruit</h3></p>
+        <select id="fruits" name="fruits" size="4">
+          <option value="apple">Apple</option>
+          <option value="banana">Banana</option>
+          <option value="orange">Orange</option>
+          <option value="grape">Grape</option>
+          <option value="mango">Mango</option>
+        </select><br>
+        <input type="submit" value="submit">
+      </div>
+    </section>
+  </body>
+</html>

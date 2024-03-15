@@ -1,0 +1,16 @@
+x=bool(10==10)
+print(x)
+y=bool(10!=10)
+print(y)
+a=type(True)
+print(a)
+b=type(False)
+print(b)
+c=25+True
+print(c)
+d=25+False
+print(d)
+e=bool("")
+print(e)
+f=bool(0)
+print(f)

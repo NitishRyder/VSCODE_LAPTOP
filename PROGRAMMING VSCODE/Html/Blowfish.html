@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encryption and Decryption</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+      }
+
+      .form-group {
+        margin-bottom: 10px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+
+      .encrypted-message {
+        margin-top: 10px;
+        padding: 5px;
+        border: 1px solid #ccc;
+      }
+
+      .decrypted-message {
+        margin-top: 10px;
+        padding: 5px;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Encryption and Decryption</h1>
+
+      <div class="form-group">
+        <label for="message">Enter message to encrypt:</label>
+        <input type="text" id="message" placeholder="Enter your message" />
+      </div>
+
+      <div class="form-group">
+        <button id="encryptButton">Encrypt</button>
+      </div>
+
+      <div class="encrypted-message">
+        <p>Encrypted Message:</p>
+        <pre id="encryptedMessage"></pre>
+      </div>
+
+      <div class="form-group">
+        <button id="decryptButton">Decrypt</button>
+      </div>
+
+      <div class="decrypted-message">
+        <p>Decrypted Message:</p>
+        <pre id="decryptedMessage"></pre>
+      </div>
+
+      <script>
+        const messageInput = document.getElementById("message");
+        const encryptedMessageElement =
+          document.getElementById("encryptedMessage");
+        const decryptedMessageElement =
+          document.getElementById("decryptedMessage");
+
+        const encryptButton = document.getElementById("encryptButton");
+        encryptButton.addEventListener("click", encryptMessage);
+
+        const decryptButton = document.getElementById("decryptButton");
+        decryptButton.addEventListener("click", decryptMessage);
+
+        function encryptMessage() {
+          const message = messageInput.value;
+          const ciphertext = encrypt(message);
+          encryptedMessageElement.textContent = ciphertext;
+        }
+
+        function decryptMessage() {
+          const ciphertext = encryptedMessageElement.textContent;
+          const decryptedText = decrypt(ciphertext);
+          decryptedMessageElement.textContent = decryptedText;
+        }
+      </script>
+    </div>
+  </body>
+</html>
