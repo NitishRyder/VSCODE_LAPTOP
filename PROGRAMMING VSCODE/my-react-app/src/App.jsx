@@ -1,13 +1,9 @@
-import './App.css'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import Form from './form.jsx'
 
-function App() {
-  
-  return (
-    <>
-      <div>
-        <p>STUDENTS DETAILS</p>
-      </div>
-    </>
-  )
-}
-export default App;
+ReactDOM.render(
+    <Form/>,
+    document.getElementById("root")
+);

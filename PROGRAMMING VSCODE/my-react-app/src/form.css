@@ -7,8 +7,8 @@
   
   .form {
     width: 300px;
-    border: 1px solid #ccc;
-    padding: 20px;
+    border: 2px solid #ccc;
+    padding: 25px;
     border-radius: 5px;
   }
   
@@ -26,12 +26,13 @@
   }
   
   .form button {
-    width: 100%;
+    width: 100px;
     padding: 10px;
+    margin-left: 32%;
     background-color: #ef1039;
     color: #fff;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
   }
   
