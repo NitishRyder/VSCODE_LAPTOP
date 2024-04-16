@@ -6,8 +6,6 @@ import TextField from './TextField.jsx'
 
 ReactDOM.render(
     <div>
-        <TextField/>
-        <br />
         <Button/>
     </div>,
     document.getElementById("root")
