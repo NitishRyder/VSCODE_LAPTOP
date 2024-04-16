@@ -1,9 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Form from './form.jsx'
+import Button from './Button.jsx'
+import TextField from './TextField.jsx'
 
 ReactDOM.render(
-    <Form/>,
+    <div>
+        <TextField/>
+        <br />
+        <Button/>
+    </div>,
     document.getElementById("root")
+    
 );
