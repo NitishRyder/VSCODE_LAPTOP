@@ -1,12 +1,11 @@
-
-#input {
+div{
     margin-top: 10%;
+}
+#input {
     border-radius: 1px;
     border: 2px solid black;
     margin-left: 44%;
 }
 #name{
-
-    text-align: center;
     margin-left: 44%;
 }

@@ -1,7 +1,8 @@
 #button{
-    margin-top: 30%;
     width: 70px;
     height: 50px;
     color: red;
-    margin-left: 47%;
+    margin-left: 48%;
+    align-items: center;
+    justify-content: center;
 }

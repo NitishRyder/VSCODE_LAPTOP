@@ -1,11 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Button from './Button.jsx'
-import TextField from './TextField.jsx'
+import TextField from './TextField';
+import Button from './Button'
 
 ReactDOM.render(
     <div>
+        <TextField/>
         <Button/>
     </div>,
     document.getElementById("root")
