@@ -53,4 +53,15 @@
     background-color: #ff0000;
   }
 
+  button{
+    font-size: 1rem;
+    padding: 10px 30px;
+  }
   
+  button #id{
+    background-color: grey;
+    color: white;
+  }
+  button #id:hover{
+    background-color: black;
+  }

@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './form.css';
 
-
-function ClickMe(){
-  alert("You clicked me!")
+function moveto(){
+  return(
+    <div>
+      Welcome
+    </div>
+  )
 }
 
 function Form() {
-  function handleSubmit(e){
-    e.preventDefault();
-    console.log('You Clicked Submit.')
-  }
   return (
     <div className="form-container">
       <form className="form">
@@ -22,11 +21,10 @@ function Form() {
 
         <label htmlFor="password">Password:</label>
         <input type="password" id="password" name="password" />
-        <div className='button' onSubmit={handleSubmit}>
-          <div className='Login'>Login</div>
-          <div className='Cancel'>Cancel</div>
+        <div className='button'>
+          <button id='Login' onClick={moveto}>Login</button>
+          <button id='Cancel'>Cancel</button>
         </div>
-        
       </form>
     </div>
   );
