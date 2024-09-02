@@ -1,0 +1,41 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+.header {
+	background-color: #ff69b4;
+	color: #ffffff;
+	padding: 20px;
+	text-align: center;
+}
+
+.lyrics {
+	padding: 20px;
+}
+
+.audio-player {
+	padding: 20px;
+}
+
+.credits {
+	padding: 20px;
+}
+
+.share-download {
+	padding: 20px;
+	text-align: center;
+}
+
+.btn-primary {
+	background-color: #ff69b4;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.btn-primary:hover {
+	background-color: #ff99cc;
+}
